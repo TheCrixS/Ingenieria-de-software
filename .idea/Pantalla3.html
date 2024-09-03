@@ -4,9 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menú Principal - Cliente</title>
+  <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav {
+        background-color: #333;
+        color: white;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        background-color: #575757;
+    }
+
+    main {
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        margin-top: 20px;
+    }
+
+    .credit-card {
+        background-color: #007bff;
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        text-align: left;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+
+    .credit-card .card-number {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        letter-spacing: 3px;
+    }
+
+    .credit-card .card-details {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .credit-card .card-details div {
+        font-size: 0.9em;
+    }
+
+    .credit-card .cvc {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        font-size: 0.8em;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @media (max-width: 600px) {
+        .credit-card {
+            width: 100%;
+            padding: 15px;
+        }
+    }
+  </style>
 </head>
 <body>
-<h2>Menú Principal - Cliente</h2>
+<header>
+  <h1>Bienvenido, Juan Pérez</h1>
+</header>
+
 <nav>
   <ul>
     <li><a href="#solicitar-tarjeta">Solicitar Tarjeta de Crédito</a></li>
@@ -17,5 +130,33 @@
     <li><a href="logout.html">Cerrar Sesión</a></li>
   </ul>
 </nav>
+
+<main>
+  <section class="card-container">
+    <article class="credit-card" aria-label="Información de la tarjeta de crédito">
+      <div class="card-number">
+        1234 5678 9123 4567
+      </div>
+      <div class="card-details">
+        <div>
+          <strong>Válido hasta</strong><br>
+          12/26
+        </div>
+        <div>
+          <strong>Nombre del Cliente</strong><br>
+          Juan Pérez
+        </div>
+      </div>
+      <div class="cvc">
+        <strong>CVC:</strong> 123
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 [Nombre de tu Compañía]. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>
+

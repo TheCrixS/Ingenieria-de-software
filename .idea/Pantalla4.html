@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Principal - Empleado del Banco</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-<h2>Menú Principal - Empleado del Banco</h2>
+<header>
+    <h1>Menú Principal - Empleado del Banco</h1>
+</header>
+
 <nav>
     <ul>
         <li><a href="#gestionar-solicitudes">Gestionar Solicitudes de Tarjeta</a></li>
@@ -17,5 +82,16 @@
         <li><a href="logout.html">Cerrar Sesión</a></li>
     </ul>
 </nav>
+
+<main>
+    <section>
+        <h2>Bienvenido, [Nombre del Empleado]</h2>
+        <p>Seleccione una opción del menú para comenzar a trabajar.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 [Nombre de tu Compañía]. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>
