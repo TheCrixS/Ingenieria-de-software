@@ -56,47 +56,6 @@
         max-width: 1200px;
     }
 
-    .card-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
-        margin-top: 20px;
-    }
-
-    .credit-card {
-        background-color: #007bff;
-        color: white;
-        border-radius: 10px;
-        padding: 20px;
-        width: 300px;
-        text-align: left;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        position: relative;
-    }
-
-    .credit-card .card-number {
-        font-size: 1.2em;
-        margin-bottom: 10px;
-        letter-spacing: 3px;
-    }
-
-    .credit-card .card-details {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .credit-card .card-details div {
-        font-size: 0.9em;
-    }
-
-    .credit-card .cvc {
-        position: absolute;
-        bottom: 10px;
-        right: 20px;
-        font-size: 0.8em;
-    }
-
     footer {
         background-color: #333;
         color: white;
@@ -106,56 +65,31 @@
         width: 100%;
         bottom: 0;
     }
-
-    @media (max-width: 600px) {
-        .credit-card {
-            width: 100%;
-            padding: 15px;
-        }
-    }
   </style>
 </head>
 <body>
 <header>
-  <h1>Bienvenido, Juan Pérez</h1>
+  <h1>Menú Principal - Cliente</h1>
 </header>
 
 <nav>
   <ul>
-    <li><a href="#solicitar-tarjeta">Solicitar Tarjeta de Crédito</a></li>
-    <li><a href="#realizar-compra">Realizar Compra</a></li>
-    <li><a href="#consultar-saldo">Consultar Saldo y Estado de Cuenta</a></li>
-    <li><a href="#historial-transacciones">Historial de Transacciones</a></li>
-    <li><a href="#generar-informe">Generar Informe de Estado de Cuenta</a></li>
-    <li><a href="logout.html">Cerrar Sesión</a></li>
+    <li><a href="Pantalla3.1.html">Solicitar Tarjeta de Crédito</a></li>
+    <li><a href="Pantalla3.3.html">Consultar Saldo y Estado de Cuenta</a></li>
+    <li><a href="Pantalla3.5.html">Generar Informe de Estado de Cuenta</a></li>
+    <li><a href="Pantalla2.html">Cerrar Sesión</a></li>
   </ul>
 </nav>
 
 <main>
-  <section class="card-container">
-    <article class="credit-card" aria-label="Información de la tarjeta de crédito">
-      <div class="card-number">
-        1234 5678 9123 4567
-      </div>
-      <div class="card-details">
-        <div>
-          <strong>Válido hasta</strong><br>
-          12/26
-        </div>
-        <div>
-          <strong>Nombre del Cliente</strong><br>
-          Juan Pérez
-        </div>
-      </div>
-      <div class="cvc">
-        <strong>CVC:</strong> 123
-      </div>
-    </article>
+  <section>
+    <h2>Bienvenido, Juan Pérez</h2>
+    <p>Seleccione una opción del menú para continuar.</p>
   </section>
 </main>
 
 <footer>
-  <p>&copy; 2024 [Nombre de tu Compañía]. Todos los derechos reservados.</p>
+  <p>&copy; 2024. Todos los derechos reservados.</p>
 </footer>
 </body>
 </html>

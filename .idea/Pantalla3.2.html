@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realizar Compra</title>
+  <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    main {
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Realizar Compra</h1>
+  <form>
+    <label for="monto">Monto:</label>
+    <input type="text" id="monto" name="monto">
+
+    <label for="comerciante">Comerciante:</label>
+    <input type="text" id="comerciante" name="comerciante">
+
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha">
+
+    <input type="submit" value="Confirmar Compra">
+  </form>
+</main>
+</body>
+</html>
