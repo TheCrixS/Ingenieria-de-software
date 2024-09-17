@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Solicitudes</title>
+  <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    nav {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    th, td {
+        padding: 12px;
+    }
+
+    th {
+        background-color: #007bff;
+        color: white;
+    }
+
+    td {
+        background-color: #f9f9f9;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 0 5px;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+    }
+
+    .btn-danger:hover {
+        background-color: #c82333;
+    }
+
+    .btn-info {
+        background-color: #17a2b8;
+    }
+
+    .btn-info:hover {
+        background-color: #138496;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Gestión de Solicitudes
+</header>
+
+<nav>
+  <ul>
+    <li><a href="MenuEmpleado.html">Inicio</a></li>
+    <li><a href="GestionSolicitudes.html">Gestion de solicitudes</a></li>
+    <li><a href="HistorialDesciciones.html">Historial de desciciones</a></li>
+    <li><a href="cerrar_sesion.html">Cerrar Sesión</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h2>Solicitudes de Clientes</h2>
+  <table>
+    <tr>
+      <th>Nombre del Cliente</th>
+      <th>Correo Electrónico</th>
+      <th>Fecha de Solicitud</th>
+      <th>Acciones</th>
+    </tr>
+    <tr>
+      <td>Juan Pérez</td>
+      <td>juan.perez@correo.com</td>
+      <td>12/09/2024</td>
+      <td>
+        <button class="btn">Aprobar</button>
+        <button class="btn btn-danger">Rechazar</button>
+        <button class="btn btn-info">Ver Información</button>
+      </td>
+    </tr>
+    <tr>
+      <td>María González</td>
+      <td>maria.gonzalez@correo.com</td>
+      <td>10/09/2024</td>
+      <td>
+        <button class="btn">Aprobar</button>
+        <button class="btn btn-danger">Rechazar</button>
+        <button class="btn btn-info">Ver Información</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Carlos Ramírez</td>
+      <td>carlos.ramirez@correo.com</td>
+      <td>09/09/2024</td>
+      <td>
+        <button class="btn">Aprobar</button>
+        <button class="btn btn-danger">Rechazar</button>
+        <button class="btn btn-info">Ver Información</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Ana Rodríguez</td>
+      <td>ana.rodriguez@correo.com</td>
+      <td>08/09/2024</td>
+      <td>
+        <button class="btn">Aprobar</button>
+        <button class="btn btn-danger">Rechazar</button>
+        <button class="btn btn-info">Ver Información</button>
+      </td>
+    </tr>
+  </table>
+</main>
+
+<footer>
+  &copy; 2024 [Nombre de tu Compañía]. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
