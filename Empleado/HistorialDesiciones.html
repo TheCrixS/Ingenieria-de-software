@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gestión de Solicitudes</title>
+  <title>Historial de Decisiones</title>
   <style>
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -92,14 +92,6 @@
         background-color: #0056b3;
     }
 
-    .btn-danger {
-        background-color: #dc3545;
-    }
-
-    .btn-danger:hover {
-        background-color: #c82333;
-    }
-
     .btn-info {
         background-color: #17a2b8;
     }
@@ -122,7 +114,7 @@
 <body>
 
 <header>
-  Gestión de Solicitudes
+  Historial de Decisiones
 </header>
 
 <nav>
@@ -136,21 +128,21 @@
 </nav>
 
 <main>
-  <h2>Solicitudes de Clientes</h2>
+  <h2>Historial de Solicitudes Aprobadas y Rechazadas</h2>
   <table>
     <tr>
       <th>Nombre del Cliente</th>
       <th>Correo Electrónico</th>
-      <th>Fecha de Solicitud</th>
+      <th>Fecha de Decisión</th>
+      <th>Estado</th>
       <th>Acciones</th>
     </tr>
     <tr>
       <td>Juan Pérez</td>
       <td>juan.perez@correo.com</td>
       <td>12/09/2024</td>
+      <td>Aprobado</td>
       <td>
-        <button class="btn">Aprobar</button>
-        <button class="btn btn-danger">Rechazar</button>
         <button class="btn btn-info">Ver Información</button>
       </td>
     </tr>
@@ -158,9 +150,8 @@
       <td>María González</td>
       <td>maria.gonzalez@correo.com</td>
       <td>10/09/2024</td>
+      <td>Rechazado</td>
       <td>
-        <button class="btn">Aprobar</button>
-        <button class="btn btn-danger">Rechazar</button>
         <button class="btn btn-info">Ver Información</button>
       </td>
     </tr>
@@ -168,9 +159,8 @@
       <td>Carlos Ramírez</td>
       <td>carlos.ramirez@correo.com</td>
       <td>09/09/2024</td>
+      <td>Aprobado</td>
       <td>
-        <button class="btn">Aprobar</button>
-        <button class="btn btn-danger">Rechazar</button>
         <button class="btn btn-info">Ver Información</button>
       </td>
     </tr>
@@ -178,9 +168,8 @@
       <td>Ana Rodríguez</td>
       <td>ana.rodriguez@correo.com</td>
       <td>08/09/2024</td>
+      <td>Rechazado</td>
       <td>
-        <button class="btn">Aprobar</button>
-        <button class="btn btn-danger">Rechazar</button>
         <button class="btn btn-info">Ver Información</button>
       </td>
     </tr>
